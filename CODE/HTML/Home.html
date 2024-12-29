@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="../CSS/Home.css" rel="stylesheet" />
+
+  <title>HOME PAGE</title>
+  <link rel="icon" href="../assets/website_logo.png" />
+</head>
+
+<body>
+  <header>
+    <div class="header_container">
+      <div class="left">
+        <img src="../../ASSETS//logo.png" alt="logo" />
+
+        <div class="search">
+          <input type="text" placeholder="Search..." id="searchProduct" />
+          <div class="search_icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="cart" id="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Cart</p>
+          
+        </div>
+        <div class="profile">
+          <i class="fa-regular fa-user"></i>
+          <p>Profile</p>
+        </div>
+        <div>
+          <div>
+            <div class="pcount">
+              <h3>(<span id="productCount"></span>)</h3>
+            </div>
+          </div>
+          
+        </div>
+        
+    </div>
+  </header>
+  <!-- header end -->
+  <!-- nav start -->
+  <nav>
+    <ul>
+      <a>
+        <li id="groceries">Groceries</li>
+      </a>
+      <a>
+        <li id="mobile">Mobile</li>
+      </a>
+      <a>
+        <li id="fashion">Fashion</li>
+      </a>
+      <a>
+        <li id="electronics">Electronics</li>
+      </a>
+      <a>
+        <li id="furniture">Furniture</li>
+      </a>
+    </ul>
+  </nav>
+  <!-- nav end -->
+  <!-- groceries list start-->
+  <div id="groceriesproducts">
+    <ul>
+      <li>Fresh Vegetables</li>
+      <hr />
+      <li>Fruits</li>
+      <hr />
+      <li>Milk & Dairy</li>
+      <hr />
+      <li>Cooking Oil</li>
+      <hr />
+      <li>Beverages</li>
+    </ul>
+  </div>
+  <!-- groceries list end-->
+
+  <!-- mobile list start-->
+  <div id="mobileproducts">
+    <ul>
+      <li>iPhone 14</li>
+      <hr />
+      <li>Samsung Galaxy S21</li>
+      <hr />
+      <li>Xiomi Mi 11</li>
+      <hr />
+      <li>OnePlus 9 Pro</li>
+      <hr />
+      <li>Google Pixel 6</li>
+    </ul>
+  </div>
+  <!-- mobile list end-->
+
+  <!-- fashion list start-->
+  <div id="fashionproducts">
+    <ul>
+      <li>Classic T-Shirts</li>
+      <hr />
+      <li>Denim Jeans</li>
+      <hr />
+      <li>Jackets</li>
+      <hr />
+      <li>Stylish Shoes</li>
+      <hr />
+      <li>Watches</li>
+    </ul>
+  </div>
+  <!-- fashion list end-->
+
+  <!-- electronics list start-->
+  <div id="electronicsproducts">
+    <ul>
+      <li>Smartphone</li>
+      <hr />
+      <li>Laptop</li>
+      <hr />
+      <li>Camera</li>
+      <hr />
+      <li>Smartwatch</li>
+      <hr />
+      <li>Bluetooth Speaker</li>
+    </ul>
+  </div>
+  <!-- electronics list end-->
+
+  <!-- furniture list start-->
+  <div id="furnitureproducts">
+    <ul>
+      <li>Wooden Chair</li>
+      <hr />
+      <li>Dining Table</li>
+      <hr />
+      <li>Sofa Set</li>
+      <hr />
+      <li>Bed Frame</li>
+      <hr />
+      <li>Bookshelf</li>
+    </ul>
+  </div>
+  <!-- furniture list end-->
+
+  <!-- carousel start -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/3db48f3341053283.jpg?q=20"
+          class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/fede1719ccaa5a58.jpg?q=20"
+          class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/7ba5649b8d3f6f1a.jpg?q=20"
+          class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p> -->
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- carousel end -->
+<!-- login form -->
+<div id="login-popup">
+  <div class="container mt-5">
+      <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4">
+              <div class="card shadow">
+                  <div class="card-body">
+                      <div class="up">
+                          <div class="left">
+                            
+                          </div>
+                          <div class="right" id="right-Cnt1">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                          </div>
+                        </div>
+                      <h3 class="card-title text-center mb-4">Login</h3>
+                      <form action="" method="POST">
+                          <!-- Username Input -->
+                          <div class="mb-3">
+                              <label for="username" class="form-label">Username</label>
+                              <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" required>
+                          </div>
+                          <!-- Password Input -->
+                          <div class="mb-3">
+                              <label for="password" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                          </div>
+                          <!-- Submit Button -->
+                          <div class="d-grid gap-2">
+                              <button type="submit" class="btn btn-primary">Login</button>
+                          </div>
+                      </form>
+                      <div class="text-center mt-3">
+                          <a href="#" class="text-decoration-none">Forgot Password?</a>
+                      </div>
+                      <div class="text-center mt-2">
+                          <p>Don't have an account? <a href="#" class="text-decoration-none">Sign Up</a></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  <!-- main section start -->
+  <main id="productContainer">
+    <!-- container start -->
+    <div class="container">
+      <!-- row start -->
+      <div class="row d-flex justify-content-center" id="cardContainer">
+
+      </div>
+      <!-- row end -->
+    </div>
+    <!-- container end -->
+  </main>
+  <!-- main section end -->
+
+
+  <div id="chatbot_div">
+    <img src="../../ASSETS/chatBot.png" id="chatbot">
+  </div>
+  <div id="chatMessageBox">
+    <div class="up">
+      <div class="left">
+        <img src="../../ASSETS/profile.png" alt="">
+        <p>bot</p>
+      </div>
+      <div class="right" id="right">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </div>
+    </div>
+    <div class="center" id="msgBox">
+      <p>Hii</p>
+      <span>Hello</span>
+    </div>
+
+    <div class="downCnt">
+      <input type="text" id="userInput" placeholder="Enter message">
+      <button id="send">Send</button>
+    </div>
+  </div>
+  </div>
+  <!-- footer start -->
+
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-between " id="footer_div">
+      <!-- About Us Section -->
+      <div class="col-12 col-md-6 col-lg-3" id="about_us">
+        <div id="about">
+          <h4>ABOUT</h4>
+          <p>Lorem ipsum dolor sit amet consectetur!<br> Ipsum dolor sit amet consectetur!</p>
+        </div>
+      </div>
+  
+      <!-- Categories Section -->
+      <div class="col-12 col-md-6 col-lg-3" id="cate">
+        <h4>CATEGORIES</h4>
+        <ul>
+          <li><a href="#">Groceries</a></li>
+          <li><a href="#">Mobile</a></li>
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Furniture</a></li>
+        </ul>
+      </div>
+  
+      <!-- Information Section -->
+      <div class="col-12 col-md-6 col-lg-3" id="info">
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Return & Exchange</a></li>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Section -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4>CONTACT</h4>
+        <div class="address">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Address: XYZ, Goa, India<br>Pin Code: 000 000</p>
+        </div>
+        <hr>
+        <div class="contact">
+          <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <p>+91 0000000000</p>
+          </div>
+          <div class="email">
+            <i class="fa-solid fa-envelope"></i>
+            <p>contact@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- footer end -->
+
+  <script src="../js/home.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

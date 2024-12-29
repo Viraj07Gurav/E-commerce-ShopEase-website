@@ -1,0 +1,462 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --text-color: (6, 6, 18);
+    --headingcolor1: rgba(166, 222, 166, 0.696);
+    --bgcolor1: #efefef;
+  }
+  
+  body {
+    /* background-color: #efefef; */
+    background-color: var(--headingcolor1);
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    /* border: 2px solid black; */
+    background-color: var(--bgcolor1);
+  }
+  
+  .header_container {
+    height: inherit;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 70%;
+    /* background-color: red; */
+  }
+  
+  .left img {
+    height: 5rem;
+  }
+  
+  .search {
+    height: 39px;
+    width: 75%;
+    /* background-color: rgb(243, 168, 71); */
+    border-radius: 0.3rem;
+    /* border: 1px solid black; */
+    display: flex;
+    /* align-items: center; */
+  }
+  
+  .search input {
+    width: 95%;
+    height: inherit;
+    border: none;
+    outline: none;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    padding-left: 1rem;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  
+  input::placeholder {
+    font-style: italic;
+  }
+  
+  .search_icon {
+    padding-left: 0.4rem;
+    padding-right: 1.2rem;
+    display: flex;
+    justify-content: end;
+    background-color: rgb(243, 168, 71);
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    border-top: 1px solid black;
+    /* border-left: 1px solid black; */
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+  }
+  
+  .right {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    padding-top: 1rem;
+  }
+  
+  .cart,
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    align-self: center;
+    cursor: pointer;
+  }
+  
+  .cart p,
+  .profile p {
+    font-size: 0.7rem;
+  }
+  .pcount {
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the content */
+    gap: 5px; /* Optional: Adds a small gap between the parentheses and the product count */
+  }
+  
+  #productCount {
+    font-size: 1.5em; /* Optional: Adjusts the size of the count */
+  }
+  
+  nav {
+    margin-top: 10px;
+    height: 3rem;
+    background-color: #efefef;
+  }
+  
+  nav ul {
+    height: 3rem;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid;
+  }
+  
+  nav ul li {
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 1px solid;
+    padding: 0.7rem;
+  }
+  #container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #groceriesproducts,
+  #mobileproducts,
+  #fashionproducts,
+  #electronicsproducts,
+  #furnitureproducts {
+    width: 12rem;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 200;
+    display: none;
+  }
+  
+  #groceriesproducts ul,
+  #mobileproducts ul,
+  #fashionproducts ul,
+  #electronicsproducts ul,
+  #furnitureproducts ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  #groceriesproducts ul li,
+  #mobileproducts ul li,
+  #fashionproducts ul li,
+  #electronicsproducts ul li,
+  #furnitureproducts ul li {
+    cursor: pointer;
+  }
+  
+  #groceriesproducts {
+    left: 10rem;
+  }
+  #mobileproducts {
+    left: 27rem;
+  }
+  #fashionproducts {
+    left: 42.5rem;
+  }
+  #electronicsproducts {
+    left: 58rem;
+  }
+  #furnitureproducts {
+    left: 75rem;
+  }
+  
+  hr {
+    background-color: grey;
+    width: 80%;
+    padding: 0.4px;
+    margin: 3px 0;
+  }
+  
+  #cards {
+    height: 24rem;
+    width: 20rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 0 20px 1px;
+  }
+  
+  #cardImg {
+    height: 60%;
+    border-radius: 1rem;
+  }
+  
+  #cards h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  .priceContainer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #productPrice{
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.138);
+    border-radius: 0.4rem;
+  }
+  
+  #productPrice::before {
+    content: "$ ";
+  }
+  
+  #productRating {
+    background-color: rgb(56, 142, 60);
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  #productRating::after {
+    content: " ★";
+    font-size: 1.2rem;
+  }
+  
+  #footer_div{
+   background-color:#86A788;
+   color: white;
+  }
+  /* #footer{
+    height: auto;
+    width: 100%;
+    background-color: rgba(38, 66, 31, 0.544);
+    color: white;
+   
+    padding-top: 2.4rem;
+  }
+  
+ 
+  
+  /* #footer_logo{
+    height: 6rem;
+    width: 6rem;
+  } */
+  
+  /* #about_us{
+    display: flex;
+    align-items: center;
+  }
+  
+  #about{
+    width: 70%;
+  }
+  
+  .address, .phone, .email{
+    display: flex;
+  }
+  
+  .address p, .phone p, .email p{
+    margin-left: 0.5rem;
+    margin-bottom: 0.2rem;
+    padding-bottom: 0.2rem;
+  } */ 
+   /* #info{
+    color: aquamarine;
+   } */
+   #cate,#info {
+    
+   }
+   #cate ul ,#info ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:start;
+    color: black;  
+   }
+   #cate ul li ,#info ul li{
+    list-style-type:none;
+    color: black;
+   
+   }
+  #cate ul li a,#info ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  #chatbot_div{
+    position: absolute;
+  }
+  
+  #chatbot{
+    height: 10rem;
+    width: 12rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 3rem;
+    cursor: pointer;
+    /* display: none; */
+  }
+  #chatMessageBox{
+    height: 400px;
+    width: 50%;
+    background-color: green;
+    position: fixed;
+    left: 25%;
+    bottom:30%;
+    z-index: 3;
+    display: none;
+
+  }
+  #chatMessageBox .up{
+    height: 10%;
+    background-color: rgb(15, 20, 13);
+    display: flex;
+    justify-content: space-between;
+    gap:85%;
+
+
+  }
+  #chatMessageBox .up .left img{
+    height: 40px;
+
+  }
+  #chatMessageBox .up .left p{
+    margin-top: 1rem;
+    color: white;
+  }
+  #chatMessageBox .up .right{
+    background-color: white;
+    width: 3rem;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+  }
+  #chatMessageBox .up .right i{
+ font-size: 2rem;
+ margin-bottom: 1rem    ;
+  }
+  #chatMessageBox .center{
+    height: 80%;
+    background-color: rgb(238, 237, 237);
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+
+
+  }
+  #chatMessageBox .center p{
+    align-self: flex-start;
+    background-color: rgb(110, 166, 238);
+    padding: 5px 10px;
+    margin-left: 1rem;
+    /* border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    border-radius: 10px 10px 10px 0px;
+  }
+  #chatMessageBox .center span{
+    align-self: flex-end;
+    background-color: rgb(110, 166, 238);
+    padding: 5px 10px;
+    margin-right: 2rem;
+    /* border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    border-radius: 10px 10px 0px 10px;
+  }
+    
+
+  #chatMessageBox .downCnt{
+    height: 10%;
+    background-color: rgb(190, 90, 90);
+    display: flex;
+    justify-content: space-between;
+
+
+  }
+  #chatMessageBox .downCnt input{
+    margin: 2px 0px 3px 40px;
+    border-radius: 2rem;
+    border: 3px solid blue;
+    width: 20rem;
+  }
+  #chatMessageBox .downCnt ::placeholder{
+  padding-left: 10px;
+  }
+  #seeMoreBtn{
+    background-color: black;
+    color: white;
+    width: 8rem;
+    height: 2rem;
+    border:none;
+    border-radius: 10px;
+  }
+
+
+  #login-popup{
+    height: 450px;
+    width: 90%;
+    /* background-color: green; */
+    position: fixed;
+    left: 6%;
+    bottom:30%;
+    z-index: 3;
+    /* display: none; */
+  
+  }
+  #login-popup .up{
+    height: 10%;
+    /* background-color: rgb(15, 20, 13); */
+    display: flex;
+    justify-content: end;
+    gap:100%;
+  
+  
+  }
+  
+  #login-popup .up .right{
+    background-color: white;
+    width: 3rem;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+  }
+  #login-popup .up .right i{
+  font-size: 2rem;
+  /* margin-bottom: 1rem    ; */
+  }
+  
